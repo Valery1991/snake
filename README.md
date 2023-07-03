@@ -1,4 +1,4 @@
-# Snake
+# Snek 🐍
 
 Simple snake game created in TypeScript.
 To run, execute `npm start`
