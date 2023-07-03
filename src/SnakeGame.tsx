@@ -73,15 +73,15 @@ const SnakeGame: FC = () => {
 
   const draw = (canvas: HTMLCanvasElement) => {
     const ctx = canvas.getContext('2d')!;
-    ctx.fillStyle = 'lightblue';
+    ctx.fillStyle = '#5b8dde';
     ctx.fillRect(0, 0, 800, 400);
     ctx.strokeStyle = 'black';
     ctx.strokeRect(0, 0, 800, 400);
     snake.forEach(part => {
-      ctx.fillStyle = 'lightgreen';
+      ctx.fillStyle = '#36ff5a';
       ctx.fillRect(part.x * 20, part.y * 20, 20, 20);
     });
-    ctx.fillStyle = 'red';
+    ctx.fillStyle = '#c40000';
     ctx.fillRect(apple.x * 20, apple.y * 20, 20, 20);
     ctx.fillStyle = 'black';
     ctx.font = '20px Arial';
